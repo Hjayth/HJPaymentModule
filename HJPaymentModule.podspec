@@ -96,33 +96,33 @@ Pod::Spec.new do |s|
 
 #subspec
   s.subspec 'HJPaymentService' do |ss|
-    ss.source_files = 'SYPayKit/Core/*.{h,m,c,swift}'
+    ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m,c,swift}'
     ss.frameworks = 'SystemConfiguration','CFNetwork'
 end
 
 s.subspec 'AliPay' do |ss|
-  ss.source_files = 'HJPaymentMoudle/PayChannels/AliPay/*.{h,m}'
-  ss.resource = 'HJPaymentMoudle/PayChannels/AliPay/**/AlipaySDK.bundle'
+  ss.source_files = 'HJPaymentModule/PayChannels/AliPay/*.{h,m}'
+  ss.resource = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle'
   ss.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
-  ss.vendored_frameworks = 'HJPaymentMoudle/PayChannels/AliPay/**/AlipaySDK.framework'
+  ss.vendored_frameworks = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework'
   ss.libraries = 'c++', 'sqlite3', 'z'
-  ss.dependency 'HJPaymentMoudle/HJPaymentService'
+  ss.dependency 'HJPaymentModule/HJPaymentService'
 end
 
 s.subspec 'WXPay' do |ss|
-  ss.source_files = 'HJPaymentMoudle/PayChannels/WXPay/**/*.{h,m}'
-  ss.vendored_libraries = 'HJPaymentMoudle/PayChannels/WXPay/**/*.a'
+  ss.source_files = 'HJPaymentModule/PayChannels/WXPay/**/*.{h,m}'
+  ss.vendored_libraries = 'HJPaymentModule/PayChannels/WXPay/**/*.a'
   ss.libraries = 'c++', 'sqlite3', 'z'
   ss.frameworks = 'CoreTelephony'
 #ss.dependency 'WechatOpenSDK'
-  ss.dependency 'HJPaymentMoudle/HJPaymentService'
+  ss.dependency 'HJPaymentModule/HJPaymentService'
 end
 
 s.subspec 'Unpay' do |ss|
-  ss.source_files = 'HJPaymentMoudle/PayChannels/Unpay/**/*.{h,m}'
-  ss.vendored_libraries = 'HJPaymentMoudle/PayChannels/Unpay/**/*.a'
+  ss.source_files = 'HJPaymentModule/PayChannels/Unpay/**/*.{h,m}'
+  ss.vendored_libraries = 'HJPaymentModule/PayChannels/Unpay/**/*.a'
   ss.libraries = 'c++', 'sqlite3', 'z'
-  ss.dependency 'HJPaymentMoudle/HJPaymentService'
+  ss.dependency 'HJPaymentModule/HJPaymentService'
 end
 
   # s.public_header_files = "Classes/**/*.h"
