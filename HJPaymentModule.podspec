@@ -101,7 +101,7 @@ Pod::Spec.new do |s|
 end
 
 s.subspec 'AliPay' do |ss|
-  ss.source_files = 'HJPaymentModule/PayChannels/AliPay/*.{h,m}'
+  ss.source_files = 'HJPaymentModule/HJPaymentModule/PayChannels/AliPay/*.{h,m}'
   ss.resource = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle'
   ss.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
   ss.vendored_frameworks = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework'
