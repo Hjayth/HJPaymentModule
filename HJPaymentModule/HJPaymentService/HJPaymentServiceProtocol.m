@@ -17,7 +17,7 @@
  */
 - (NSObject * _Nonnull)generatePayOrder:(NSDictionary * _Nonnull)charge {
 
-
+    return nil;
 }
 
 
