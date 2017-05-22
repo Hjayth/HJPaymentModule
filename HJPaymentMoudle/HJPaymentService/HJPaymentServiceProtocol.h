@@ -1,15 +1,15 @@
 //
-//  HJPayment.h
+//  HJPaymentServiceProtocol.h
 //  HJPaymentMoudleDemo
 //
-//  Created by 谢豪杰 on 2017/5/18.
+//  Created by 谢豪杰 on 2017/5/22.
 //  Copyright © 2017年 谢豪杰. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-extern NSInteger const kHJPayErrorCode;
+static NSInteger const kHJPayErrorCode = 400;
 static NSString * _Nullable const kHJPaySuccessMessage =  @"支付成功";
 static NSString * _Nullable const kHJPayFailureMessage = @"支付失败";
 static NSString * _Nullable const kHJPayCancelMessage = @"支付取消";
@@ -68,21 +68,21 @@ typedef void(^HJPayResultHandle)(HJPayResultStatus status, NSDictionary * __null
 
 /**
  @bref  进行支付
-
+ 
  @param order 订单信息
  @param resultHandle 支付结果回调
  @param secheme 要调起的三方APP的配置URLSecheme
  */
 - (void)payWithOrder:(NSObject * _Nonnull)order
-                secheme:(NSString * _Nullable )secheme
+             secheme:(NSString * _Nullable )secheme
               result:(_Nonnull HJPayResultHandle)resultHandle
-             ;
+;
 
 
 
 /**
  @bref 支付
-
+ 
  @param order 订单信息
  @param viewController 调用支付的VC（这个主要是针对的是使用银联支付的情况，银联支付需要）
  @param resultHandle 结果回调
@@ -90,7 +90,7 @@ typedef void(^HJPayResultHandle)(HJPayResultStatus status, NSDictionary * __null
  */
 - (void)payWithOrder:( NSObject * _Nonnull )order
       viewController:( UIViewController * _Nullable )viewController
-      secheme:(NSString * _Nullable )secheme
+             secheme:(NSString * _Nullable )secheme
       resultCallBack:(HJPayResultHandle _Nullable )resultHandle ;
 
 @optional
@@ -98,7 +98,7 @@ typedef void(^HJPayResultHandle)(HJPayResultStatus status, NSDictionary * __null
 
 /**
  @bref  判断客户端是否安装（主要是针对微信支付）
-
+ 
  @return 客户端是否安装
  */
 - (BOOL)isInstalled;
@@ -115,7 +115,7 @@ typedef void(^HJPayResultHandle)(HJPayResultStatus status, NSDictionary * __null
 
 /**
  当程序跳回来时候做的处理
-
+ 
  @param url url
  */
 - (BOOL)handleOpenURL:(NSURL * _Nonnull)url;
@@ -124,7 +124,7 @@ typedef void(^HJPayResultHandle)(HJPayResultStatus status, NSDictionary * __null
 
 /**
  开启debug模式（只针对alipay 和 银联支付）
-
+ 
  @param enabled 是否开启
  */
 - (void)setDebugMode:(BOOL)enabled;
