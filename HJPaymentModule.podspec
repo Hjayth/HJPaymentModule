@@ -98,6 +98,7 @@ Pod::Spec.new do |s|
   s.subspec 'HJPaymentService' do |ss|
     ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m}'
     ss.frameworks = 'SystemConfiguration','CFNetwork'
+    ss.dependency 'HJPaymentModule/PayChannels','HJPaymentModule/AliPay'
 end
 
 
