@@ -95,14 +95,6 @@ Pod::Spec.new do |s|
 
 
 #subspec
-  s.subspec 'HJPaymentService' do |ss|
-    ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m}'
-    ss.frameworks = 'SystemConfiguration','CFNetwork'
-    ss.dependency 'HJPaymentModule/PayChannels'
-    ss.dependency  'HJPaymentModule/AliPay'
-end
-
-
 s.subspec 'PayChannels' do |ss|
     ss.source_files ='HJPaymentModule/PayChannels/*.{h,m}'
 end
@@ -132,6 +124,14 @@ s.subspec 'Unpay' do |ss|
   ss.dependency 'HJPaymentModule/PayChannels'
 end
 
+s.subspec 'HJPaymentService' do |ss|
+  ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m}'
+  ss.frameworks = 'SystemConfiguration','CFNetwork'
+  ss.dependency 'HJPaymentModule/PayChannels'
+  ss.dependency  'HJPaymentModule/AliPay'
+  ss.dependency 'HJPaymentModule/WXPay'
+  ss.dependency 'HJPaymentModule/Unpay'
+end
   # s.public_header_files = "Classes/**/*.h"
 
 
