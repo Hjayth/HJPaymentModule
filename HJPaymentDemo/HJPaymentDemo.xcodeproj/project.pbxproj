@@ -15,7 +15,6 @@
 		C449F6021ED509C000F3177F /* HJUninPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5EF1ED509C000F3177F /* HJUninPaymentService.m */; };
 		C449F6031ED509C000F3177F /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F5F41ED509C000F3177F /* libPaymentControl.a */; };
 		C449F6041ED509C000F3177F /* HJWXPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5F71ED509C000F3177F /* HJWXPaymentService.m */; };
-		C449F6051ED509C000F3177F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F5F91ED509C000F3177F /* libWeChatSDK.a */; };
 		C44FC2C61ED2BF9600B04650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2C51ED2BF9600B04650 /* main.m */; };
 		C44FC2C91ED2BF9600B04650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2C81ED2BF9600B04650 /* AppDelegate.m */; };
 		C44FC2CC1ED2BF9600B04650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2CB1ED2BF9600B04650 /* ViewController.m */; };
@@ -34,9 +33,13 @@
 		C44FC3171ED2C0F300B04650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3161ED2C0F300B04650 /* Foundation.framework */; };
 		C44FC3191ED2C0FB00B04650 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3181ED2C0FB00B04650 /* CoreTelephony.framework */; };
 		C44FC3691ED2CF1000B04650 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3681ED2CF1000B04650 /* libsqlite3.tbd */; };
+		FE8A11E37DAE3C3F12968BF6 /* libPods-HJPaymentDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C607BF3C944CE6120EF539D /* libPods-HJPaymentDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C607BF3C944CE6120EF539D /* libPods-HJPaymentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJPaymentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4181FA34743F7B6BD5317152 /* Pods-HJPaymentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJPaymentDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJPaymentDemo/Pods-HJPaymentDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9284492C26384F99407B4507 /* Pods-HJPaymentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJPaymentDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJPaymentDemo/Pods-HJPaymentDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C449F5E01ED509C000F3177F /* HJPaymentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentModule.h; sourceTree = "<group>"; };
 		C449F5E21ED509C000F3177F /* HJPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentService.h; sourceTree = "<group>"; };
 		C449F5E31ED509C000F3177F /* HJPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPaymentService.m; sourceTree = "<group>"; };
@@ -52,10 +55,6 @@
 		C449F5F41ED509C000F3177F /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		C449F5F61ED509C000F3177F /* HJWXPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWXPaymentService.h; sourceTree = "<group>"; };
 		C449F5F71ED509C000F3177F /* HJWXPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWXPaymentService.m; sourceTree = "<group>"; };
-		C449F5F91ED509C000F3177F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		C449F5FA1ED509C000F3177F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		C449F5FB1ED509C000F3177F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		C449F5FC1ED509C000F3177F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		C44FC2C11ED2BF9600B04650 /* HJPaymentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJPaymentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44FC2C51ED2BF9600B04650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C44FC2C71ED2BF9600B04650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,13 +98,22 @@
 				C449F6001ED509C000F3177F /* AlipaySDK.framework in Frameworks */,
 				C44FC3061ED2C09100B04650 /* CoreGraphics.framework in Frameworks */,
 				C44FC3071ED2C09100B04650 /* CoreText.framework in Frameworks */,
-				C449F6051ED509C000F3177F /* libWeChatSDK.a in Frameworks */,
+				FE8A11E37DAE3C3F12968BF6 /* libPods-HJPaymentDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B5F80D105D291A7A72D110B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4181FA34743F7B6BD5317152 /* Pods-HJPaymentDemo.debug.xcconfig */,
+				9284492C26384F99407B4507 /* Pods-HJPaymentDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C449F5DF1ED509C000F3177F /* HJPaymentModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,20 +204,8 @@
 			children = (
 				C449F5F61ED509C000F3177F /* HJWXPaymentService.h */,
 				C449F5F71ED509C000F3177F /* HJWXPaymentService.m */,
-				C449F5F81ED509C000F3177F /* Lib */,
 			);
 			path = WXPay;
-			sourceTree = "<group>";
-		};
-		C449F5F81ED509C000F3177F /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				C449F5F91ED509C000F3177F /* libWeChatSDK.a */,
-				C449F5FA1ED509C000F3177F /* WechatAuthSDK.h */,
-				C449F5FB1ED509C000F3177F /* WXApi.h */,
-				C449F5FC1ED509C000F3177F /* WXApiObject.h */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		C44FC2B81ED2BF9600B04650 = {
@@ -218,6 +214,7 @@
 				C44FC2C31ED2BF9600B04650 /* HJPaymentDemo */,
 				C44FC2C21ED2BF9600B04650 /* Products */,
 				C44FC3031ED2C09100B04650 /* Frameworks */,
+				9B5F80D105D291A7A72D110B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +266,7 @@
 				C44FC3081ED2C0A900B04650 /* Security.framework */,
 				C44FC3041ED2C09100B04650 /* CoreGraphics.framework */,
 				C44FC3051ED2C09100B04650 /* CoreText.framework */,
+				3C607BF3C944CE6120EF539D /* libPods-HJPaymentDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44FC2D81ED2BF9600B04650 /* Build configuration list for PBXNativeTarget "HJPaymentDemo" */;
 			buildPhases = (
+				F218BC23E233020B526BAA5A /* [CP] Check Pods Manifest.lock */,
 				C44FC2BD1ED2BF9600B04650 /* Sources */,
 				C44FC2BE1ED2BF9600B04650 /* Frameworks */,
 				C44FC2BF1ED2BF9600B04650 /* Resources */,
+				C055323AA639081F916406F9 /* [CP] Embed Pods Frameworks */,
+				F4C9F42A79345F06A09C62F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,6 +341,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C055323AA639081F916406F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJPaymentDemo/Pods-HJPaymentDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F218BC23E233020B526BAA5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4C9F42A79345F06A09C62F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJPaymentDemo/Pods-HJPaymentDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C44FC2BD1ED2BF9600B04650 /* Sources */ = {
@@ -477,10 +526,13 @@
 		};
 		C44FC2D91ED2BF9600B04650 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4181FA34743F7B6BD5317152 /* Pods-HJPaymentDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = XDK267KQ83;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HJPaymentDemo/HJPaymentModule/PayChannels/AliPay/Lib",
@@ -502,10 +554,13 @@
 		};
 		C44FC2DA1ED2BF9600B04650 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9284492C26384F99407B4507 /* Pods-HJPaymentDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HJPaymentDemo/HJPaymentModule/PayChannels/AliPay/Lib",

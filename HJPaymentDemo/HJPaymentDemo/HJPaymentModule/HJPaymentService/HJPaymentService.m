@@ -7,7 +7,7 @@
 //
 
 #import "HJPaymentService.h"
-#import "HJAliPaymentService.h"
+//#import "HJAliPaymentService.h"
 #import "HJWXPaymentService.h"
 #import "HJUninPaymentService.h"
 
@@ -29,7 +29,7 @@
     payment.paymentService = nil;
     switch (paymentChannel) {
         case HJPaymentChannelAliPay:
-            payment.paymentService = [[HJAliPaymentService alloc] init];
+          //  payment.paymentService = [[HJAliPaymentService alloc] init];
             break;
         case HJPaymentChannelUNinPay:
             payment.paymentService = [[HJUninPaymentService alloc] init];
@@ -54,7 +54,7 @@
     payment.paymentService = nil;
     switch (paymentChannel) {
         case HJPaymentChannelAliPay:
-            payment.paymentService = [[HJAliPaymentService alloc] init];
+      //      payment.paymentService = [[HJAliPaymentService alloc] init];
             break;
         case HJPaymentChannelUNinPay:
             payment.paymentService = [[HJUninPaymentService alloc] init];

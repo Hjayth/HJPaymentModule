@@ -7,7 +7,7 @@
 //
 
 #import "HJWXPaymentService.h"
-#import "WXApi.h"
+#import <WXApi.h>
 
 @interface HJWXPaymentService ()<WXApiDelegate>
 
