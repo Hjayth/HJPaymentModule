@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C449F5FD1ED509C000F3177F /* HJPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5E31ED509C000F3177F /* HJPaymentService.m */; };
+		C449F5FE1ED509C000F3177F /* HJAliPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5E71ED509C000F3177F /* HJAliPaymentService.m */; };
+		C449F5FF1ED509C000F3177F /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C449F5E91ED509C000F3177F /* AlipaySDK.bundle */; };
+		C449F6001ED509C000F3177F /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F5EA1ED509C000F3177F /* AlipaySDK.framework */; };
+		C449F6011ED509C000F3177F /* HJPaymentServiceProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5EC1ED509C000F3177F /* HJPaymentServiceProtocol.m */; };
+		C449F6021ED509C000F3177F /* HJUninPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5EF1ED509C000F3177F /* HJUninPaymentService.m */; };
+		C449F6031ED509C000F3177F /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F5F41ED509C000F3177F /* libPaymentControl.a */; };
+		C449F6041ED509C000F3177F /* HJWXPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C449F5F71ED509C000F3177F /* HJWXPaymentService.m */; };
+		C449F6051ED509C000F3177F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C449F5F91ED509C000F3177F /* libWeChatSDK.a */; };
 		C44FC2C61ED2BF9600B04650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2C51ED2BF9600B04650 /* main.m */; };
 		C44FC2C91ED2BF9600B04650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2C81ED2BF9600B04650 /* AppDelegate.m */; };
 		C44FC2CC1ED2BF9600B04650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC2CB1ED2BF9600B04650 /* ViewController.m */; };
@@ -24,19 +33,29 @@
 		C44FC3151ED2C0EC00B04650 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3141ED2C0EC00B04650 /* CFNetwork.framework */; };
 		C44FC3171ED2C0F300B04650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3161ED2C0F300B04650 /* Foundation.framework */; };
 		C44FC3191ED2C0FB00B04650 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3181ED2C0FB00B04650 /* CoreTelephony.framework */; };
-		C44FC35F1ED2CED800B04650 /* HJPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC3451ED2CED800B04650 /* HJPaymentService.m */; };
-		C44FC3601ED2CED800B04650 /* HJPaymentServiceProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC3471ED2CED800B04650 /* HJPaymentServiceProtocol.m */; };
-		C44FC3611ED2CED800B04650 /* HJAliPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC34B1ED2CED800B04650 /* HJAliPaymentService.m */; };
-		C44FC3621ED2CED800B04650 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C44FC34D1ED2CED800B04650 /* AlipaySDK.bundle */; };
-		C44FC3631ED2CED800B04650 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC34E1ED2CED800B04650 /* AlipaySDK.framework */; };
-		C44FC3641ED2CED800B04650 /* HJUninPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC3511ED2CED800B04650 /* HJUninPaymentService.m */; };
-		C44FC3651ED2CED800B04650 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3561ED2CED800B04650 /* libPaymentControl.a */; };
-		C44FC3661ED2CED800B04650 /* HJWXPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = C44FC3591ED2CED800B04650 /* HJWXPaymentService.m */; };
-		C44FC3671ED2CED800B04650 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC35B1ED2CED800B04650 /* libWeChatSDK.a */; };
 		C44FC3691ED2CF1000B04650 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C44FC3681ED2CF1000B04650 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C449F5E01ED509C000F3177F /* HJPaymentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentModule.h; sourceTree = "<group>"; };
+		C449F5E21ED509C000F3177F /* HJPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentService.h; sourceTree = "<group>"; };
+		C449F5E31ED509C000F3177F /* HJPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPaymentService.m; sourceTree = "<group>"; };
+		C449F5E61ED509C000F3177F /* HJAliPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAliPaymentService.h; sourceTree = "<group>"; };
+		C449F5E71ED509C000F3177F /* HJAliPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAliPaymentService.m; sourceTree = "<group>"; };
+		C449F5E91ED509C000F3177F /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		C449F5EA1ED509C000F3177F /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		C449F5EB1ED509C000F3177F /* HJPaymentServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentServiceProtocol.h; sourceTree = "<group>"; };
+		C449F5EC1ED509C000F3177F /* HJPaymentServiceProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPaymentServiceProtocol.m; sourceTree = "<group>"; };
+		C449F5EE1ED509C000F3177F /* HJUninPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJUninPaymentService.h; sourceTree = "<group>"; };
+		C449F5EF1ED509C000F3177F /* HJUninPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJUninPaymentService.m; sourceTree = "<group>"; };
+		C449F5F21ED509C000F3177F /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		C449F5F41ED509C000F3177F /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		C449F5F61ED509C000F3177F /* HJWXPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWXPaymentService.h; sourceTree = "<group>"; };
+		C449F5F71ED509C000F3177F /* HJWXPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWXPaymentService.m; sourceTree = "<group>"; };
+		C449F5F91ED509C000F3177F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		C449F5FA1ED509C000F3177F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		C449F5FB1ED509C000F3177F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		C449F5FC1ED509C000F3177F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		C44FC2C11ED2BF9600B04650 /* HJPaymentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJPaymentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44FC2C51ED2BF9600B04650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C44FC2C71ED2BF9600B04650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,25 +77,6 @@
 		C44FC3141ED2C0EC00B04650 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C44FC3161ED2C0F300B04650 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C44FC3181ED2C0FB00B04650 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C44FC3421ED2CED800B04650 /* HJPaymentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentModule.h; sourceTree = "<group>"; };
-		C44FC3441ED2CED800B04650 /* HJPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentService.h; sourceTree = "<group>"; };
-		C44FC3451ED2CED800B04650 /* HJPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPaymentService.m; sourceTree = "<group>"; };
-		C44FC3461ED2CED800B04650 /* HJPaymentServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPaymentServiceProtocol.h; sourceTree = "<group>"; };
-		C44FC3471ED2CED800B04650 /* HJPaymentServiceProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPaymentServiceProtocol.m; sourceTree = "<group>"; };
-		C44FC34A1ED2CED800B04650 /* HJAliPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAliPaymentService.h; sourceTree = "<group>"; };
-		C44FC34B1ED2CED800B04650 /* HJAliPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAliPaymentService.m; sourceTree = "<group>"; };
-		C44FC34D1ED2CED800B04650 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		C44FC34E1ED2CED800B04650 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		C44FC3501ED2CED800B04650 /* HJUninPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJUninPaymentService.h; sourceTree = "<group>"; };
-		C44FC3511ED2CED800B04650 /* HJUninPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJUninPaymentService.m; sourceTree = "<group>"; };
-		C44FC3541ED2CED800B04650 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
-		C44FC3561ED2CED800B04650 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
-		C44FC3581ED2CED800B04650 /* HJWXPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWXPaymentService.h; sourceTree = "<group>"; };
-		C44FC3591ED2CED800B04650 /* HJWXPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWXPaymentService.m; sourceTree = "<group>"; };
-		C44FC35B1ED2CED800B04650 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		C44FC35C1ED2CED800B04650 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		C44FC35D1ED2CED800B04650 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		C44FC35E1ED2CED800B04650 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		C44FC3681ED2CF1000B04650 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,26 +86,132 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44FC3691ED2CF1000B04650 /* libsqlite3.tbd in Frameworks */,
-				C44FC3671ED2CED800B04650 /* libWeChatSDK.a in Frameworks */,
 				C44FC3191ED2C0FB00B04650 /* CoreTelephony.framework in Frameworks */,
 				C44FC3171ED2C0F300B04650 /* Foundation.framework in Frameworks */,
 				C44FC3151ED2C0EC00B04650 /* CFNetwork.framework in Frameworks */,
 				C44FC3131ED2C0E500B04650 /* CoreMotion.framework in Frameworks */,
 				C44FC3111ED2C0DD00B04650 /* QuartzCore.framework in Frameworks */,
-				C44FC3631ED2CED800B04650 /* AlipaySDK.framework in Frameworks */,
 				C44FC30F1ED2C0CF00B04650 /* libc++.tbd in Frameworks */,
 				C44FC30D1ED2C0C600B04650 /* libz.tbd in Frameworks */,
+				C449F6031ED509C000F3177F /* libPaymentControl.a in Frameworks */,
 				C44FC30B1ED2C0B000B04650 /* UIKit.framework in Frameworks */,
 				C44FC3091ED2C0A900B04650 /* Security.framework in Frameworks */,
+				C449F6001ED509C000F3177F /* AlipaySDK.framework in Frameworks */,
 				C44FC3061ED2C09100B04650 /* CoreGraphics.framework in Frameworks */,
 				C44FC3071ED2C09100B04650 /* CoreText.framework in Frameworks */,
-				C44FC3651ED2CED800B04650 /* libPaymentControl.a in Frameworks */,
+				C449F6051ED509C000F3177F /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C449F5DF1ED509C000F3177F /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5E01ED509C000F3177F /* HJPaymentModule.h */,
+				C449F5E11ED509C000F3177F /* HJPaymentService */,
+				C449F5E41ED509C000F3177F /* PayChannels */,
+			);
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		C449F5E11ED509C000F3177F /* HJPaymentService */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5E21ED509C000F3177F /* HJPaymentService.h */,
+				C449F5E31ED509C000F3177F /* HJPaymentService.m */,
+			);
+			path = HJPaymentService;
+			sourceTree = "<group>";
+		};
+		C449F5E41ED509C000F3177F /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5E51ED509C000F3177F /* AliPay */,
+				C449F5EB1ED509C000F3177F /* HJPaymentServiceProtocol.h */,
+				C449F5EC1ED509C000F3177F /* HJPaymentServiceProtocol.m */,
+				C449F5ED1ED509C000F3177F /* Unpay */,
+				C449F5F51ED509C000F3177F /* WXPay */,
+			);
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		C449F5E51ED509C000F3177F /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5E61ED509C000F3177F /* HJAliPaymentService.h */,
+				C449F5E71ED509C000F3177F /* HJAliPaymentService.m */,
+				C449F5E81ED509C000F3177F /* Lib */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		C449F5E81ED509C000F3177F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5E91ED509C000F3177F /* AlipaySDK.bundle */,
+				C449F5EA1ED509C000F3177F /* AlipaySDK.framework */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		C449F5ED1ED509C000F3177F /* Unpay */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5EE1ED509C000F3177F /* HJUninPaymentService.h */,
+				C449F5EF1ED509C000F3177F /* HJUninPaymentService.m */,
+				C449F5F01ED509C000F3177F /* Lib */,
+			);
+			path = Unpay;
+			sourceTree = "<group>";
+		};
+		C449F5F01ED509C000F3177F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5F11ED509C000F3177F /* inc */,
+				C449F5F31ED509C000F3177F /* libs */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		C449F5F11ED509C000F3177F /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5F21ED509C000F3177F /* UPPaymentControl.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		C449F5F31ED509C000F3177F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5F41ED509C000F3177F /* libPaymentControl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		C449F5F51ED509C000F3177F /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5F61ED509C000F3177F /* HJWXPaymentService.h */,
+				C449F5F71ED509C000F3177F /* HJWXPaymentService.m */,
+				C449F5F81ED509C000F3177F /* Lib */,
+			);
+			path = WXPay;
+			sourceTree = "<group>";
+		};
+		C449F5F81ED509C000F3177F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				C449F5F91ED509C000F3177F /* libWeChatSDK.a */,
+				C449F5FA1ED509C000F3177F /* WechatAuthSDK.h */,
+				C449F5FB1ED509C000F3177F /* WXApi.h */,
+				C449F5FC1ED509C000F3177F /* WXApiObject.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		C44FC2B81ED2BF9600B04650 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +232,7 @@
 		C44FC2C31ED2BF9600B04650 /* HJPaymentDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C44FC3411ED2CED800B04650 /* HJPaymentModule */,
+				C449F5DF1ED509C000F3177F /* HJPaymentModule */,
 				C44FC2C71ED2BF9600B04650 /* AppDelegate.h */,
 				C44FC2C81ED2BF9600B04650 /* AppDelegate.m */,
 				C44FC2CA1ED2BF9600B04650 /* ViewController.h */,
@@ -165,112 +271,6 @@
 				C44FC3051ED2C09100B04650 /* CoreText.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C44FC3411ED2CED800B04650 /* HJPaymentModule */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3421ED2CED800B04650 /* HJPaymentModule.h */,
-				C44FC3431ED2CED800B04650 /* HJPaymentService */,
-				C44FC3481ED2CED800B04650 /* PayChannels */,
-			);
-			path = HJPaymentModule;
-			sourceTree = "<group>";
-		};
-		C44FC3431ED2CED800B04650 /* HJPaymentService */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3441ED2CED800B04650 /* HJPaymentService.h */,
-				C44FC3451ED2CED800B04650 /* HJPaymentService.m */,
-				C44FC3461ED2CED800B04650 /* HJPaymentServiceProtocol.h */,
-				C44FC3471ED2CED800B04650 /* HJPaymentServiceProtocol.m */,
-			);
-			path = HJPaymentService;
-			sourceTree = "<group>";
-		};
-		C44FC3481ED2CED800B04650 /* PayChannels */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3491ED2CED800B04650 /* AliPay */,
-				C44FC34F1ED2CED800B04650 /* Unpay */,
-				C44FC3571ED2CED800B04650 /* WXPay */,
-			);
-			path = PayChannels;
-			sourceTree = "<group>";
-		};
-		C44FC3491ED2CED800B04650 /* AliPay */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC34A1ED2CED800B04650 /* HJAliPaymentService.h */,
-				C44FC34B1ED2CED800B04650 /* HJAliPaymentService.m */,
-				C44FC34C1ED2CED800B04650 /* Lib */,
-			);
-			path = AliPay;
-			sourceTree = "<group>";
-		};
-		C44FC34C1ED2CED800B04650 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC34D1ED2CED800B04650 /* AlipaySDK.bundle */,
-				C44FC34E1ED2CED800B04650 /* AlipaySDK.framework */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		C44FC34F1ED2CED800B04650 /* Unpay */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3501ED2CED800B04650 /* HJUninPaymentService.h */,
-				C44FC3511ED2CED800B04650 /* HJUninPaymentService.m */,
-				C44FC3521ED2CED800B04650 /* Lib */,
-			);
-			path = Unpay;
-			sourceTree = "<group>";
-		};
-		C44FC3521ED2CED800B04650 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3531ED2CED800B04650 /* inc */,
-				C44FC3551ED2CED800B04650 /* libs */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		C44FC3531ED2CED800B04650 /* inc */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3541ED2CED800B04650 /* UPPaymentControl.h */,
-			);
-			path = inc;
-			sourceTree = "<group>";
-		};
-		C44FC3551ED2CED800B04650 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3561ED2CED800B04650 /* libPaymentControl.a */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		C44FC3571ED2CED800B04650 /* WXPay */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC3581ED2CED800B04650 /* HJWXPaymentService.h */,
-				C44FC3591ED2CED800B04650 /* HJWXPaymentService.m */,
-				C44FC35A1ED2CED800B04650 /* Lib */,
-			);
-			path = WXPay;
-			sourceTree = "<group>";
-		};
-		C44FC35A1ED2CED800B04650 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				C44FC35B1ED2CED800B04650 /* libWeChatSDK.a */,
-				C44FC35C1ED2CED800B04650 /* WechatAuthSDK.h */,
-				C44FC35D1ED2CED800B04650 /* WXApi.h */,
-				C44FC35E1ED2CED800B04650 /* WXApiObject.h */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +334,7 @@
 			files = (
 				C44FC2D41ED2BF9600B04650 /* LaunchScreen.storyboard in Resources */,
 				C44FC2D11ED2BF9600B04650 /* Assets.xcassets in Resources */,
-				C44FC3621ED2CED800B04650 /* AlipaySDK.bundle in Resources */,
+				C449F5FF1ED509C000F3177F /* AlipaySDK.bundle in Resources */,
 				C44FC2CF1ED2BF9600B04650 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,14 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44FC3641ED2CED800B04650 /* HJUninPaymentService.m in Sources */,
-				C44FC3601ED2CED800B04650 /* HJPaymentServiceProtocol.m in Sources */,
+				C449F6021ED509C000F3177F /* HJUninPaymentService.m in Sources */,
+				C449F6011ED509C000F3177F /* HJPaymentServiceProtocol.m in Sources */,
+				C449F5FE1ED509C000F3177F /* HJAliPaymentService.m in Sources */,
 				C44FC2CC1ED2BF9600B04650 /* ViewController.m in Sources */,
 				C44FC2C91ED2BF9600B04650 /* AppDelegate.m in Sources */,
-				C44FC35F1ED2CED800B04650 /* HJPaymentService.m in Sources */,
+				C449F5FD1ED509C000F3177F /* HJPaymentService.m in Sources */,
 				C44FC2C61ED2BF9600B04650 /* main.m in Sources */,
-				C44FC3611ED2CED800B04650 /* HJAliPaymentService.m in Sources */,
-				C44FC3661ED2CED800B04650 /* HJWXPaymentService.m in Sources */,
+				C449F6041ED509C000F3177F /* HJWXPaymentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +543,7 @@
 				C44FC2DA1ED2BF9600B04650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
