@@ -14,6 +14,26 @@
 @end
 
 @implementation HJWXPaymentService
+- (void)payWithOrder:(NSObject *)order viewController:(UIViewController *)viewController secheme:(NSString *)secheme resultCallBack:(HJPayResultHandle)resultHandle {
+    if (![self isInstalled]) {
+        NSError * error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:@"应用未安装"}];
+        resultHandle(HJPayResultStatusUnInstall, nil, error);
+        return;
+    } else if (![WXApi isWXAppSupportApi]) {
+        NSError *error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:@"该版本微信不支持支付"}];
+        resultHandle(HJPayResultStatusCancel, nil, error);
+        return;
+    }
+    
+    PayReq * req = (PayReq *)order;
+    //调用支付
+    [WXApi sendReq:req];
+    
+    self.paymentHandle = resultHandle;
+
+}
+
+
 - (void)payWithOrder:(NSObject *)order result:(HJPayResultHandle)resultHandle secheme:(NSString * _Nullable)secheme{
   
     if (![self isInstalled]) {
