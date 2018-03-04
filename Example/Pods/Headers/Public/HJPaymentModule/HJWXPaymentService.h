@@ -1,0 +1,1 @@
+../../../../../HJPaymentModule/PayChannels/WXPay/HJWXPaymentService.h

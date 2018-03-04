@@ -29,14 +29,14 @@
     payment.paymentService = nil;
     switch (paymentChannel) {
         case HJPaymentChannelAliPay:
-            payment.paymentService = [[HJAliPaymentService alloc] init];
+            payment.paymentService = [HJAliPaymentService shareInstance];
             break;
         case HJPaymentChannelUNinPay:
-            payment.paymentService = [[HJUninPaymentService alloc] init];
+            payment.paymentService = [HJUninPaymentService shareInstance];
             break;
         
         case HJPaymentChannelWX:
-            payment.paymentService = [[HJWXPaymentService alloc] init];
+            payment.paymentService = [HJWXPaymentService shareInstance];
             break;
             
         
@@ -54,14 +54,14 @@
     payment.paymentService = nil;
     switch (paymentChannel) {
         case HJPaymentChannelAliPay:
-            payment.paymentService = [[HJAliPaymentService alloc] init];
+            payment.paymentService = [HJAliPaymentService shareInstance];
             break;
         case HJPaymentChannelUNinPay:
-            payment.paymentService = [[HJUninPaymentService alloc] init];
+            payment.paymentService = [HJUninPaymentService shareInstance];
             break;
             
         case HJPaymentChannelWX:
-            payment.paymentService = [[HJWXPaymentService alloc] init];
+            payment.paymentService = [HJWXPaymentService shareInstance];
             break;
             
             
@@ -71,5 +71,7 @@
     [payment.paymentService registerAPP:appId];
     
 }
+
+
 
 @end

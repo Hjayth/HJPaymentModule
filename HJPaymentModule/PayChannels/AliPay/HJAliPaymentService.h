@@ -10,4 +10,6 @@
 
 @interface HJAliPaymentService : HJPaymentServiceProtocol
 
++ (instancetype)shareInstance;
+
 @end

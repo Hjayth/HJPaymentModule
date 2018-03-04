@@ -1,0 +1,1015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00355DD9F4D411C5C711977FF8EF2194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7586B8AFA4FD6AF7B70F4E8BE642AFA0 /* Foundation.framework */; };
+		0B34D9C4CCFEB9831FCDFDB3525E1FC1 /* HJUninPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E53AE3BAAF2A4A76CB2D31FD9D9ECF /* HJUninPaymentService.m */; };
+		0CDA4585DA2C1125241955ABAFEBFFF3 /* HJWXPaymentService.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AB6AFD47903388BD1D2BB5E9759D7C /* HJWXPaymentService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7BB3EF0E5717975A0DAEB0690C609B /* HJAliPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC94F6DC3736799EC0D247A91E7A8B /* HJAliPaymentService.m */; };
+		1E6BE6EA30DC34D09168B4F1B051E581 /* Pods-HJPaymentModule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB346195FFC0771BAEDD27C6D90F0D3B /* Pods-HJPaymentModule_Example-dummy.m */; };
+		2A6FC5E88572DBEFEF24DC0C311941AE /* HJPaymentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA864CD1880613AD1FC5D32C91E58E5 /* HJPaymentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F0EBEF56648EF6DDFE94BDBB987753 /* APayAuthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DF16291229013B0088BCA500D0441E /* APayAuthInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD12D66A4C586FF2FF7044DD48D10F4 /* AlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 749450C87EE5FD95237764956A7E9DA1 /* AlipaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EEEBB135A3CCA554EDAF5948360C193 /* HJWXPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F779329A765DCAB1616F1D0F66AC1 /* HJWXPaymentService.m */; };
+		50789C3D8DBCFE55BD03CFA53CDF9549 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19223387B94A8E87975C1CA639F8F72 /* CFNetwork.framework */; };
+		54266EE89137FA4263A10529F8B61283 /* HJPaymentServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE11E0DAA42E504A21C5674FB1BE4F4 /* HJPaymentServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9741E01C2151365CDD487A60FA47E9 /* HJPaymentServiceProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6EFF9BF81E0805750DC12A3BE409EE /* HJPaymentServiceProtocol.m */; };
+		62694572F87630C57CEF144CC896C68A /* HJPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 390D6EB48EDAE72839A5962A0969B786 /* HJPaymentService.m */; };
+		8229F6333DD647277B2860A8AD84117C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021EA9EFE376C535FA3E2B13D499C282 /* CoreMotion.framework */; };
+		89963073241B3D8BD557D6D63805394B /* HJAliPaymentService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2CFF30E4A909FF86B267A3F8D15B2C /* HJAliPaymentService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		986AC89B1508C0F2DA30D5267253A4FE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A953467BD9BA283321A5AB11F2660C1A /* CoreTelephony.framework */; };
+		AB0EAD116F9BE024EF30FFF5250B801C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A7E2BC2D87A58992853A8713264E5 /* SystemConfiguration.framework */; };
+		ABBCD1429EAC1D6457910DB54FB21A22 /* HJUninPaymentService.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA77A9E632A22F35404E65CBF25239D /* HJUninPaymentService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAA64782B14B818F532160B985582D04 /* HJPaymentModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0496EC1AE7E8CEB9859F4BB0D1FDD86 /* HJPaymentModule-dummy.m */; };
+		CDFE773304DA1E11D6798B97E8CB551F /* UPPaymentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF72267D9EC25607586ECF7A70668CA /* UPPaymentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2EF644E94AD316257D1FF3338E409DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7586B8AFA4FD6AF7B70F4E8BE642AFA0 /* Foundation.framework */; };
+		E702FD5EC65C938571CD59551E9A4CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7586B8AFA4FD6AF7B70F4E8BE642AFA0 /* Foundation.framework */; };
+		F0F86B59F20F1B59E0588ABAFCBA8BDC /* Pods-HJPaymentModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C83D612EA6964114FE8132E652FABD /* Pods-HJPaymentModule_Tests-dummy.m */; };
+		F97E9F7DEBEB345FA000D8338AFBDF70 /* HJPaymentService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4FF0458F6FE14241647D0157E768C8 /* HJPaymentService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E668BC6329C6C1E7CC3BE5EACED0F088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E329FB4096D9996914CE331809FB6E58;
+			remoteInfo = HJPaymentModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001D0AACEF98B8ED80D7A94DFF0C0B27 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.1/WechatAuthSDK.h; sourceTree = "<group>"; };
+		00EC94F6DC3736799EC0D247A91E7A8B /* HJAliPaymentService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJAliPaymentService.m; sourceTree = "<group>"; };
+		021EA9EFE376C535FA3E2B13D499C282 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		050D09863291AD79E3EB6D9FFE6BDD51 /* libPods-HJPaymentModule_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HJPaymentModule_Tests.a"; path = "libPods-HJPaymentModule_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3FF2C8CD199B772B1E87970CEF5AF0 /* Pods-HJPaymentModule_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJPaymentModule_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0E2CFF30E4A909FF86B267A3F8D15B2C /* HJAliPaymentService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJAliPaymentService.h; sourceTree = "<group>"; };
+		1678F6204F815E98CB910A1C2F716486 /* Pods-HJPaymentModule_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJPaymentModule_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21AB6AFD47903388BD1D2BB5E9759D7C /* HJWXPaymentService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJWXPaymentService.h; sourceTree = "<group>"; };
+		2382F7A7C0B6C5CFC6324BF07D4DE6E6 /* Pods-HJPaymentModule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJPaymentModule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		390D6EB48EDAE72839A5962A0969B786 /* HJPaymentService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJPaymentService.m; sourceTree = "<group>"; };
+		3C2E20A260A2BA2C7AA888B23345AAFD /* libPods-HJPaymentModule_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HJPaymentModule_Example.a"; path = "libPods-HJPaymentModule_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4FF0458F6FE14241647D0157E768C8 /* HJPaymentService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJPaymentService.h; sourceTree = "<group>"; };
+		3D0F779329A765DCAB1616F1D0F66AC1 /* HJWXPaymentService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJWXPaymentService.m; sourceTree = "<group>"; };
+		40C45927B4C51C3DF08AC4FB3093FDD9 /* Pods-HJPaymentModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJPaymentModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48A9178FAB4C5789990B172CE27DF1E3 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.8.1/libWeChatSDK.a; sourceTree = "<group>"; };
+		4EA01D398EF2F9C19DBAFD30F44709FC /* Pods-HJPaymentModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJPaymentModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA9EF043E8E92B5CE054E8B5A2C2CE0 /* Pods-HJPaymentModule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJPaymentModule_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5CA864CD1880613AD1FC5D32C91E58E5 /* HJPaymentModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJPaymentModule.h; sourceTree = "<group>"; };
+		5D5264A94F673BE0AD5E593F72B6CADC /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.8.1/WXApiObject.h; sourceTree = "<group>"; };
+		620AA60B7D1DD21EB73275908FFF557F /* Pods-HJPaymentModule_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJPaymentModule_Example-resources.sh"; sourceTree = "<group>"; };
+		65E53AE3BAAF2A4A76CB2D31FD9D9ECF /* HJUninPaymentService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJUninPaymentService.m; sourceTree = "<group>"; };
+		6CA77A9E632A22F35404E65CBF25239D /* HJUninPaymentService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJUninPaymentService.h; sourceTree = "<group>"; };
+		6CD40C8DE4DC858F8A3A3CCD51BEEC93 /* HJPaymentModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HJPaymentModule.xcconfig; sourceTree = "<group>"; };
+		6EDD4F7B7739F4D562F0A16A31FA2929 /* Pods-HJPaymentModule_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJPaymentModule_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F2C2CCB288192125F011E210D51E1F5 /* libHJPaymentModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHJPaymentModule.a; path = libHJPaymentModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		749450C87EE5FD95237764956A7E9DA1 /* AlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlipaySDK.h; sourceTree = "<group>"; };
+		7586B8AFA4FD6AF7B70F4E8BE642AFA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7D6EFF9BF81E0805750DC12A3BE409EE /* HJPaymentServiceProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HJPaymentServiceProtocol.m; sourceTree = "<group>"; };
+		7EB89110A06646257D57587F5DBFB0AD /* libPaymentControl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPaymentControl.a; path = HJPaymentModule/PayChannels/Unpay/Lib/libs/libPaymentControl.a; sourceTree = "<group>"; };
+		802BBC0A43F74E147A62A235B8A2BC25 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		8C420EDE4F9906445E8C14EA3296C85C /* Pods-HJPaymentModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJPaymentModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8EE11E0DAA42E504A21C5674FB1BE4F4 /* HJPaymentServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HJPaymentServiceProtocol.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A953467BD9BA283321A5AB11F2660C1A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		ABF72267D9EC25607586ECF7A70668CA /* UPPaymentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		B19223387B94A8E87975C1CA639F8F72 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B4DA49E1A80664F11B4B09372751D134 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.1/WXApi.h; sourceTree = "<group>"; };
+		B7C83D612EA6964114FE8132E652FABD /* Pods-HJPaymentModule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJPaymentModule_Tests-dummy.m"; sourceTree = "<group>"; };
+		BB346195FFC0771BAEDD27C6D90F0D3B /* Pods-HJPaymentModule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJPaymentModule_Example-dummy.m"; sourceTree = "<group>"; };
+		C3DF16291229013B0088BCA500D0441E /* APayAuthInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APayAuthInfo.h; sourceTree = "<group>"; };
+		D0496EC1AE7E8CEB9859F4BB0D1FDD86 /* HJPaymentModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HJPaymentModule-dummy.m"; sourceTree = "<group>"; };
+		D4A1AD1CC396257593390AFCCAF13E66 /* Pods-HJPaymentModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJPaymentModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D5A91A802522FF6980C646D9DDEDA35D /* HJPaymentModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HJPaymentModule-prefix.pch"; sourceTree = "<group>"; };
+		DAB468D853976C665141C3ECD01CEA63 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = HJPaymentModule/PayChannels/AliPay/Lib/AlipaySDK.framework; sourceTree = "<group>"; };
+		F4D7C36BDC6DE57E537D7E929A6E7ECC /* Pods-HJPaymentModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJPaymentModule_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FB4A7E2BC2D87A58992853A8713264E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FBAB43E63AF0499013351C9138418D2E /* Pods-HJPaymentModule_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJPaymentModule_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB9C01071E2638891E88D21F7B1429C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50789C3D8DBCFE55BD03CFA53CDF9549 /* CFNetwork.framework in Frameworks */,
+				8229F6333DD647277B2860A8AD84117C /* CoreMotion.framework in Frameworks */,
+				986AC89B1508C0F2DA30D5267253A4FE /* CoreTelephony.framework in Frameworks */,
+				00355DD9F4D411C5C711977FF8EF2194 /* Foundation.framework in Frameworks */,
+				AB0EAD116F9BE024EF30FFF5250B801C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5718C58A7E7669B8A382FF8BDB8D13A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702FD5EC65C938571CD59551E9A4CBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827CA0F5C2BB79D8F8A7066732797432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EF644E94AD316257D1FF3338E409DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0558231B7EEE74AC2CEBA41B1386B84C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EB89110A06646257D57587F5DBFB0AD /* libPaymentControl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A6064856CC0434D4B6E0E602F734F45 /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				21AB6AFD47903388BD1D2BB5E9759D7C /* HJWXPaymentService.h */,
+				3D0F779329A765DCAB1616F1D0F66AC1 /* HJWXPaymentService.m */,
+			);
+			name = WXPay;
+			path = WXPay;
+			sourceTree = "<group>";
+		};
+		0BD8A509A5E1EA1ECD5A7A5180024ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F2C2CCB288192125F011E210D51E1F5 /* libHJPaymentModule.a */,
+				3C2E20A260A2BA2C7AA888B23345AAFD /* libPods-HJPaymentModule_Example.a */,
+				050D09863291AD79E3EB6D9FFE6BDD51 /* libPods-HJPaymentModule_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F36BFB74222F8C3DC332CF4235A7C5D /* Pods-HJPaymentModule_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40C45927B4C51C3DF08AC4FB3093FDD9 /* Pods-HJPaymentModule_Tests-acknowledgements.markdown */,
+				2382F7A7C0B6C5CFC6324BF07D4DE6E6 /* Pods-HJPaymentModule_Tests-acknowledgements.plist */,
+				B7C83D612EA6964114FE8132E652FABD /* Pods-HJPaymentModule_Tests-dummy.m */,
+				0C3FF2C8CD199B772B1E87970CEF5AF0 /* Pods-HJPaymentModule_Tests-frameworks.sh */,
+				FBAB43E63AF0499013351C9138418D2E /* Pods-HJPaymentModule_Tests-resources.sh */,
+				4EA01D398EF2F9C19DBAFD30F44709FC /* Pods-HJPaymentModule_Tests.debug.xcconfig */,
+				8C420EDE4F9906445E8C14EA3296C85C /* Pods-HJPaymentModule_Tests.release.xcconfig */,
+			);
+			name = "Pods-HJPaymentModule_Tests";
+			path = "Target Support Files/Pods-HJPaymentModule_Tests";
+			sourceTree = "<group>";
+		};
+		11BA0E2C9493C327F752800502078714 /* AlipaySDK.framework */ = {
+			isa = PBXGroup;
+			children = (
+				E8B01FE99BAB0998CE9AA762F97E14CB /* Headers */,
+			);
+			name = AlipaySDK.framework;
+			path = AlipaySDK.framework;
+			sourceTree = "<group>";
+		};
+		137BE6A90D38918C6D319F1F250C24CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A9178FAB4C5789990B172CE27DF1E3 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AA48C1B35E37F1D4C7FAF76308BF397 /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				1EBF73177F924564DA61F9D71E15C79C /* AliPay */,
+			);
+			name = PayChannels;
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		1EBF73177F924564DA61F9D71E15C79C /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				0E2CFF30E4A909FF86B267A3F8D15B2C /* HJAliPaymentService.h */,
+				00EC94F6DC3736799EC0D247A91E7A8B /* HJAliPaymentService.m */,
+			);
+			name = AliPay;
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				324B463DC6A32348077A8E0DA380CD6B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BFA8F1792DB116D109758821BB6462D /* Unpay */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A59855D095B9B2846D1DC0A894DE0 /* Lib */,
+			);
+			name = Unpay;
+			path = Unpay;
+			sourceTree = "<group>";
+		};
+		2C0B4F191C834F1016DF42D1864A92CA /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A7E7840E8047EBBACAE51C03CB54E /* WXPay */,
+			);
+			name = PayChannels;
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		324B463DC6A32348077A8E0DA380CD6B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B19223387B94A8E87975C1CA639F8F72 /* CFNetwork.framework */,
+				021EA9EFE376C535FA3E2B13D499C282 /* CoreMotion.framework */,
+				A953467BD9BA283321A5AB11F2660C1A /* CoreTelephony.framework */,
+				7586B8AFA4FD6AF7B70F4E8BE642AFA0 /* Foundation.framework */,
+				FB4A7E2BC2D87A58992853A8713264E5 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4440931EF917C0EF2390DA25F529B8E4 /* HJPaymentService */ = {
+			isa = PBXGroup;
+			children = (
+				58BB6A306F92380B0291A59CF5C1CEEF /* HJPaymentModule */,
+			);
+			name = HJPaymentService;
+			sourceTree = "<group>";
+		};
+		4C9BF56A7250BE15ACFEE79E57FD2FC4 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				1AA48C1B35E37F1D4C7FAF76308BF397 /* PayChannels */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		4F4A7E7840E8047EBBACAE51C03CB54E /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WXPay;
+			path = WXPay;
+			sourceTree = "<group>";
+		};
+		5332A146144933647D40860F1C3C7485 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				FEF41DF376C32EA0D882EA12F5663BDE /* Frameworks */,
+				4C9BF56A7250BE15ACFEE79E57FD2FC4 /* HJPaymentModule */,
+				8F9D57D48D862EC4B95375D2E30B4D03 /* Resources */,
+			);
+			name = AliPay;
+			sourceTree = "<group>";
+		};
+		58562A383CDFD4819AA7C3548C9DDDA5 /* Unpay */ = {
+			isa = PBXGroup;
+			children = (
+				0558231B7EEE74AC2CEBA41B1386B84C /* Frameworks */,
+				86934AB5383D0959AEF3C649523C3931 /* HJPaymentModule */,
+			);
+			name = Unpay;
+			sourceTree = "<group>";
+		};
+		58BB6A306F92380B0291A59CF5C1CEEF /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				7C291B2FEEDB035E58BE30A1CA137856 /* HJPaymentService */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		5EDBEE21005DF1E3C71D6604CAEABA70 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = inc;
+			path = inc;
+			sourceTree = "<group>";
+		};
+		66E0C2D61CED2B43FDEBEFD01B5A752C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABB91B5EC70441672CDF68C5261E396B /* HJPaymentModule */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		69FBD746AD186FEAC45E4DA0967D9BD1 /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				8EE11E0DAA42E504A21C5674FB1BE4F4 /* HJPaymentServiceProtocol.h */,
+				7D6EFF9BF81E0805750DC12A3BE409EE /* HJPaymentServiceProtocol.m */,
+				CF71877C615C58A04B1F43F66FCE5A6C /* AliPay */,
+				D8CA2BA955A166DC2EDA0BFBD31097FC /* Unpay */,
+				0A6064856CC0434D4B6E0E602F734F45 /* WXPay */,
+			);
+			name = PayChannels;
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		6A0A59855D095B9B2846D1DC0A894DE0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5EDBEE21005DF1E3C71D6604CAEABA70 /* inc */,
+			);
+			name = Lib;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		7ADA45F435BB210C822629C0D9B54295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A06ADCCE070C454EA51A1CFE4C967F24 /* WechatOpenSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C291B2FEEDB035E58BE30A1CA137856 /* HJPaymentService */ = {
+			isa = PBXGroup;
+			children = (
+				3C4FF0458F6FE14241647D0157E768C8 /* HJPaymentService.h */,
+				390D6EB48EDAE72839A5962A0969B786 /* HJPaymentService.m */,
+			);
+			name = HJPaymentService;
+			path = HJPaymentService;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				66E0C2D61CED2B43FDEBEFD01B5A752C /* Development Pods */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				7ADA45F435BB210C822629C0D9B54295 /* Pods */,
+				0BD8A509A5E1EA1ECD5A7A5180024ECB /* Products */,
+				F06CCABF10A7F510941215412608B3DA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86934AB5383D0959AEF3C649523C3931 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4FD4B49C34D8373452012BDEE5886 /* PayChannels */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		8B494C35BE344FAF4D08AA815C867FA0 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				5CA864CD1880613AD1FC5D32C91E58E5 /* HJPaymentModule.h */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		8F9D57D48D862EC4B95375D2E30B4D03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF64AC52CBF07B276EA2BA0E200FC6 /* HJPaymentModule */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		92DEC8D6BC59FFC06333B378DDF383BD /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				DF22691C71C18E9333F5C0C9DC1D5005 /* AliPay */,
+			);
+			name = PayChannels;
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		A06ADCCE070C454EA51A1CFE4C967F24 /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				001D0AACEF98B8ED80D7A94DFF0C0B27 /* WechatAuthSDK.h */,
+				B4DA49E1A80664F11B4B09372751D134 /* WXApi.h */,
+				5D5264A94F673BE0AD5E593F72B6CADC /* WXApiObject.h */,
+				137BE6A90D38918C6D319F1F250C24CA /* Frameworks */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		A3C04F6AFC32EBD704A42590CA1AE935 /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				A810AADDC9723CDFE15E6896612AE700 /* HJPaymentModule */,
+			);
+			name = WXPay;
+			sourceTree = "<group>";
+		};
+		A810AADDC9723CDFE15E6896612AE700 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				2C0B4F191C834F1016DF42D1864A92CA /* PayChannels */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		ABB91B5EC70441672CDF68C5261E396B /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				5332A146144933647D40860F1C3C7485 /* AliPay */,
+				8B494C35BE344FAF4D08AA815C867FA0 /* HJPaymentModule */,
+				4440931EF917C0EF2390DA25F529B8E4 /* HJPaymentService */,
+				EBEEBAB600DA01297CDB39FBA515B257 /* PayChannels */,
+				F95FD165314A290327F4D08A67C941DC /* Support Files */,
+				58562A383CDFD4819AA7C3548C9DDDA5 /* Unpay */,
+				A3C04F6AFC32EBD704A42590CA1AE935 /* WXPay */,
+			);
+			name = HJPaymentModule;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B38213E4ADCF32EA15DBFD55BF1CCBE9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				11BA0E2C9493C327F752800502078714 /* AlipaySDK.framework */,
+			);
+			name = Lib;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B5F60C809E0F1CC3B1CB4AC234454A20 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				802BBC0A43F74E147A62A235B8A2BC25 /* AlipaySDK.bundle */,
+			);
+			name = Lib;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B766A9558B54B82DC94F8F2F4D0C3CA6 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				ABF72267D9EC25607586ECF7A70668CA /* UPPaymentControl.h */,
+			);
+			name = inc;
+			path = inc;
+			sourceTree = "<group>";
+		};
+		C3218886FB49802784B8FCDD662C78B5 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				69FBD746AD186FEAC45E4DA0967D9BD1 /* PayChannels */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		CCAF64AC52CBF07B276EA2BA0E200FC6 /* HJPaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				92DEC8D6BC59FFC06333B378DDF383BD /* PayChannels */,
+			);
+			name = HJPaymentModule;
+			path = HJPaymentModule;
+			sourceTree = "<group>";
+		};
+		CF71877C615C58A04B1F43F66FCE5A6C /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				B38213E4ADCF32EA15DBFD55BF1CCBE9 /* Lib */,
+			);
+			name = AliPay;
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		D8CA2BA955A166DC2EDA0BFBD31097FC /* Unpay */ = {
+			isa = PBXGroup;
+			children = (
+				6CA77A9E632A22F35404E65CBF25239D /* HJUninPaymentService.h */,
+				65E53AE3BAAF2A4A76CB2D31FD9D9ECF /* HJUninPaymentService.m */,
+				EDDD7E770A176519BE5DC7A78967469B /* Lib */,
+			);
+			name = Unpay;
+			path = Unpay;
+			sourceTree = "<group>";
+		};
+		DF22691C71C18E9333F5C0C9DC1D5005 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				B5F60C809E0F1CC3B1CB4AC234454A20 /* Lib */,
+			);
+			name = AliPay;
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		E4A1AD72821284D81532EEFE9E3FDBAA /* Pods-HJPaymentModule_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1678F6204F815E98CB910A1C2F716486 /* Pods-HJPaymentModule_Example-acknowledgements.markdown */,
+				6EDD4F7B7739F4D562F0A16A31FA2929 /* Pods-HJPaymentModule_Example-acknowledgements.plist */,
+				BB346195FFC0771BAEDD27C6D90F0D3B /* Pods-HJPaymentModule_Example-dummy.m */,
+				5AA9EF043E8E92B5CE054E8B5A2C2CE0 /* Pods-HJPaymentModule_Example-frameworks.sh */,
+				620AA60B7D1DD21EB73275908FFF557F /* Pods-HJPaymentModule_Example-resources.sh */,
+				D4A1AD1CC396257593390AFCCAF13E66 /* Pods-HJPaymentModule_Example.debug.xcconfig */,
+				F4D7C36BDC6DE57E537D7E929A6E7ECC /* Pods-HJPaymentModule_Example.release.xcconfig */,
+			);
+			name = "Pods-HJPaymentModule_Example";
+			path = "Target Support Files/Pods-HJPaymentModule_Example";
+			sourceTree = "<group>";
+		};
+		E6F4FD4B49C34D8373452012BDEE5886 /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				2BFA8F1792DB116D109758821BB6462D /* Unpay */,
+			);
+			name = PayChannels;
+			path = PayChannels;
+			sourceTree = "<group>";
+		};
+		E8B01FE99BAB0998CE9AA762F97E14CB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				749450C87EE5FD95237764956A7E9DA1 /* AlipaySDK.h */,
+				C3DF16291229013B0088BCA500D0441E /* APayAuthInfo.h */,
+			);
+			name = Headers;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		EBEEBAB600DA01297CDB39FBA515B257 /* PayChannels */ = {
+			isa = PBXGroup;
+			children = (
+				C3218886FB49802784B8FCDD662C78B5 /* HJPaymentModule */,
+			);
+			name = PayChannels;
+			sourceTree = "<group>";
+		};
+		EDDD7E770A176519BE5DC7A78967469B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B766A9558B54B82DC94F8F2F4D0C3CA6 /* inc */,
+			);
+			name = Lib;
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F06CCABF10A7F510941215412608B3DA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1AD72821284D81532EEFE9E3FDBAA /* Pods-HJPaymentModule_Example */,
+				0F36BFB74222F8C3DC332CF4235A7C5D /* Pods-HJPaymentModule_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F95FD165314A290327F4D08A67C941DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CD40C8DE4DC858F8A3A3CCD51BEEC93 /* HJPaymentModule.xcconfig */,
+				D0496EC1AE7E8CEB9859F4BB0D1FDD86 /* HJPaymentModule-dummy.m */,
+				D5A91A802522FF6980C646D9DDEDA35D /* HJPaymentModule-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HJPaymentModule";
+			sourceTree = "<group>";
+		};
+		FEF41DF376C32EA0D882EA12F5663BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB468D853976C665141C3ECD01CEA63 /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D3B0266D96DC101EA37115265404071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD12D66A4C586FF2FF7044DD48D10F4 /* AlipaySDK.h in Headers */,
+				35F0EBEF56648EF6DDFE94BDBB987753 /* APayAuthInfo.h in Headers */,
+				89963073241B3D8BD557D6D63805394B /* HJAliPaymentService.h in Headers */,
+				2A6FC5E88572DBEFEF24DC0C311941AE /* HJPaymentModule.h in Headers */,
+				F97E9F7DEBEB345FA000D8338AFBDF70 /* HJPaymentService.h in Headers */,
+				54266EE89137FA4263A10529F8B61283 /* HJPaymentServiceProtocol.h in Headers */,
+				ABBCD1429EAC1D6457910DB54FB21A22 /* HJUninPaymentService.h in Headers */,
+				0CDA4585DA2C1125241955ABAFEBFFF3 /* HJWXPaymentService.h in Headers */,
+				CDFE773304DA1E11D6798B97E8CB551F /* UPPaymentControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FD13B892230528AB53062458E3B65C6 /* Pods-HJPaymentModule_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2DCC53BBB8069ABBCD163749BDD36 /* Build configuration list for PBXNativeTarget "Pods-HJPaymentModule_Example" */;
+			buildPhases = (
+				BCB2ED82C2E4C961AC5BDECC05A839E2 /* Sources */,
+				827CA0F5C2BB79D8F8A7066732797432 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1303F77588B5CF40D96A470A72E3C184 /* PBXTargetDependency */,
+			);
+			name = "Pods-HJPaymentModule_Example";
+			productName = "Pods-HJPaymentModule_Example";
+			productReference = 3C2E20A260A2BA2C7AA888B23345AAFD /* libPods-HJPaymentModule_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9F65847B87370BD0CF04FFCCAF2953C7 /* Pods-HJPaymentModule_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2ADB51E628A11D98980E247EE5E322 /* Build configuration list for PBXNativeTarget "Pods-HJPaymentModule_Tests" */;
+			buildPhases = (
+				347EF0587A5A7AA47759A485C76DD40D /* Sources */,
+				5718C58A7E7669B8A382FF8BDB8D13A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HJPaymentModule_Tests";
+			productName = "Pods-HJPaymentModule_Tests";
+			productReference = 050D09863291AD79E3EB6D9FFE6BDD51 /* libPods-HJPaymentModule_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E329FB4096D9996914CE331809FB6E58 /* HJPaymentModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5A91482D9C14E619DA0CE2A850CB08 /* Build configuration list for PBXNativeTarget "HJPaymentModule" */;
+			buildPhases = (
+				2742781C9D663F308DE5A4F63C9A2B3D /* Sources */,
+				3FB9C01071E2638891E88D21F7B1429C /* Frameworks */,
+				9D3B0266D96DC101EA37115265404071 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJPaymentModule;
+			productName = HJPaymentModule;
+			productReference = 6F2C2CCB288192125F011E210D51E1F5 /* libHJPaymentModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0BD8A509A5E1EA1ECD5A7A5180024ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E329FB4096D9996914CE331809FB6E58 /* HJPaymentModule */,
+				0FD13B892230528AB53062458E3B65C6 /* Pods-HJPaymentModule_Example */,
+				9F65847B87370BD0CF04FFCCAF2953C7 /* Pods-HJPaymentModule_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2742781C9D663F308DE5A4F63C9A2B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7BB3EF0E5717975A0DAEB0690C609B /* HJAliPaymentService.m in Sources */,
+				BAA64782B14B818F532160B985582D04 /* HJPaymentModule-dummy.m in Sources */,
+				62694572F87630C57CEF144CC896C68A /* HJPaymentService.m in Sources */,
+				5D9741E01C2151365CDD487A60FA47E9 /* HJPaymentServiceProtocol.m in Sources */,
+				0B34D9C4CCFEB9831FCDFDB3525E1FC1 /* HJUninPaymentService.m in Sources */,
+				3EEEBB135A3CCA554EDAF5948360C193 /* HJWXPaymentService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347EF0587A5A7AA47759A485C76DD40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F86B59F20F1B59E0588ABAFCBA8BDC /* Pods-HJPaymentModule_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB2ED82C2E4C961AC5BDECC05A839E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6BE6EA30DC34D09168B4F1B051E581 /* Pods-HJPaymentModule_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1303F77588B5CF40D96A470A72E3C184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HJPaymentModule;
+			target = E329FB4096D9996914CE331809FB6E58 /* HJPaymentModule */;
+			targetProxy = E668BC6329C6C1E7CC3BE5EACED0F088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C4B11EB070D00202484327E963443A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD40C8DE4DC858F8A3A3CCD51BEEC93 /* HJPaymentModule.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HJPaymentModule/HJPaymentModule-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		70BD42D50194E2B5A085C425182C08D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD40C8DE4DC858F8A3A3CCD51BEEC93 /* HJPaymentModule.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HJPaymentModule/HJPaymentModule-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		B5EECE5B23C97D0A86AE6488FCB92337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D7C36BDC6DE57E537D7E929A6E7ECC /* Pods-HJPaymentModule_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EA4231E3564446D0FB7EFCED4D3B58C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A1AD1CC396257593390AFCCAF13E66 /* Pods-HJPaymentModule_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F1203902891A248DF6EC3E6CC22E32A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA01D398EF2F9C19DBAFD30F44709FC /* Pods-HJPaymentModule_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F158ADC13A0B6DADE316FC2F3FA4C0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C420EDE4F9906445E8C14EA3296C85C /* Pods-HJPaymentModule_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5A91482D9C14E619DA0CE2A850CB08 /* Build configuration list for PBXNativeTarget "HJPaymentModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B11EB070D00202484327E963443A9 /* Debug */,
+				70BD42D50194E2B5A085C425182C08D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F2ADB51E628A11D98980E247EE5E322 /* Build configuration list for PBXNativeTarget "Pods-HJPaymentModule_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1203902891A248DF6EC3E6CC22E32A0 /* Debug */,
+				F158ADC13A0B6DADE316FC2F3FA4C0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2DCC53BBB8069ABBCD163749BDD36 /* Build configuration list for PBXNativeTarget "Pods-HJPaymentModule_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4231E3564446D0FB7EFCED4D3B58C9 /* Debug */,
+				B5EECE5B23C97D0A86AE6488FCB92337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

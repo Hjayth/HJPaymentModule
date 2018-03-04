@@ -7,15 +7,25 @@
 //
 
 #import "HJWXPaymentService.h"
-#import "WXApi.h"
+#import <WXApi.h>
 
 @interface HJWXPaymentService ()<WXApiDelegate>
 
 @end
 
 @implementation HJWXPaymentService
-- (void)payWithOrder:(NSObject *)order result:(HJPayResultHandle)resultHandle secheme:(NSString * _Nullable)secheme{
-  
+
++ (instancetype)shareInstance {
+    static HJWXPaymentService * instance = nil;
+    static dispatch_once_t  onceToken ;
+    dispatch_once(&onceToken, ^{
+        instance = [[HJWXPaymentService alloc] init];
+    });
+    return instance;
+
+}
+
+- (void)payWithOrder:(NSObject *)order viewController:(UIViewController *)viewController secheme:(NSString *)secheme resultCallBack:(HJPayResultHandle)resultHandle {
     if (![self isInstalled]) {
         NSError * error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:@"应用未安装"}];
         resultHandle(HJPayResultStatusUnInstall, nil, error);
@@ -29,8 +39,36 @@
     PayReq * req = (PayReq *)order;
     //调用支付
     [WXApi sendReq:req];
-
+    
     self.paymentHandle = resultHandle;
+
+}
+
+
+- (void)payWithOrder:(NSObject *)order result:(HJPayResultHandle)resultHandle secheme:(NSString * _Nullable)secheme{
+  
+    if (![self isInstalled]) {
+        NSError * error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:@"应用未安装"}];
+        
+        if (resultHandle) {
+            resultHandle(HJPayResultStatusUnInstall, nil, error);
+             self.paymentHandle = resultHandle;
+        }
+        return;
+    } else if (![WXApi isWXAppSupportApi]) {
+        NSError *error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:@"该版本微信不支持支付"}];
+        if (resultHandle) {
+            resultHandle(HJPayResultStatusUnInstall, nil, error);
+             self.paymentHandle = resultHandle;
+        }
+        return;
+    }
+    
+    PayReq * req = (PayReq *)order;
+    //调用支付
+    [WXApi sendReq:req];
+
+   
     
 }
 
@@ -94,7 +132,10 @@
         errorDescription = errorMessageDic[@(resp.errCode)];
     }
     NSError * error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:errorDescription}];
-    self.paymentHandle(payResultStatus,errorMessageDic,error);
+        if (self.paymentHandle) {
+                self.paymentHandle(payResultStatus,errorMessageDic,error);
+        }
+
         
          }
     

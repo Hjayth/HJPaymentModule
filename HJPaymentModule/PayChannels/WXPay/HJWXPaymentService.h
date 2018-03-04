@@ -9,5 +9,5 @@
 #import "HJPaymentServiceProtocol.h"
 
 @interface HJWXPaymentService : HJPaymentServiceProtocol
-
++ (instancetype)shareInstance;
 @end

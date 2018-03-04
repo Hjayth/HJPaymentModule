@@ -9,7 +9,6 @@
 #ifndef HJPaymentModule_h
 #define HJPaymentModule_h
 
-//#import <HJPaymentModule/HJPaymentService>
 #import "HJPaymentService.h"
 
 

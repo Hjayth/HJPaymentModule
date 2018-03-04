@@ -1,0 +1,11 @@
+
+
+target 'HJPaymentModule_Example' do
+  pod 'HJPaymentModule', :path => '../'
+
+  target 'HJPaymentModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

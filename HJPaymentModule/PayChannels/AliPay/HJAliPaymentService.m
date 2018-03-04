@@ -11,6 +11,16 @@
 
 @implementation HJAliPaymentService
 
++ (instancetype)shareInstance {
+    static HJAliPaymentService * instance = nil;
+    static dispatch_once_t  onceToken ;
+    dispatch_once(&onceToken, ^{
+        instance = [[HJAliPaymentService alloc] init];
+    });
+    return instance;
+    
+}
+
 - (void)payWithOrder:(NSObject *)order secheme:(NSString *)secheme result:(HJPayResultHandle)resultHandle {
     
     [self payWithOrder:order viewController:nil secheme:secheme resultCallBack:resultHandle];
@@ -18,8 +28,10 @@
 
 
 - (void)payWithOrder:(NSObject *)order viewController:(UIViewController *)viewController secheme:(NSString *)secheme resultCallBack:(HJPayResultHandle)resultHandle {
+    if (resultHandle) {
+        self.paymentHandle = resultHandle;
+    }
     
-    self.paymentHandle = resultHandle;
     
     __weak __typeof(self)wself = self;
     [[AlipaySDK defaultService] payOrder:(NSString *)order fromScheme:secheme callback:^(NSDictionary *resultDic) {
@@ -87,8 +99,10 @@
     NSString *message = [[self class] returnErrorMessage:resultStatus];
     
     NSError *error = [NSError errorWithDomain:NSStringFromClass(self.class) code:kHJPayErrorCode userInfo:@{NSLocalizedDescriptionKey:message}];
+    if (self.paymentHandle) {
+        self.paymentHandle(status, resultDic, error);
+    }
     
-    self.paymentHandle(status, resultDic, error);
     
     
     

@@ -1,0 +1,1 @@
+../../../../../../HJPaymentModule/PayChannels/AliPay/Lib/AlipaySDK.framework/Headers/APayAuthInfo.h
