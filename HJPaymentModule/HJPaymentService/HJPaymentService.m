@@ -72,6 +72,21 @@
     
 }
 
-
++ (BOOL)handleOpenUrl:(NSURL *)url {
+    if([url.scheme hasPrefix:@"wx"])//微信
+    {
+ 
+        return [[HJWXPaymentService shareInstance] handleOpenURL:url];
+    }
+    else if([url.host isEqualToString:@"uppayresult"])//银联
+    {
+        return [[HJUninPaymentService shareInstance] handleOpenURL:url];
+    }
+    else if([url.host isEqualToString:@"safepay"])//支付宝
+    {
+        return [[HJAliPaymentService shareInstance] handleOpenURL:url];
+    }
+    return NO;
+}
 
 @end

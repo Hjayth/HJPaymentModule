@@ -20,55 +20,25 @@
   "subspecs": [
     {
       "name": "PayChannels",
-      "source_files": "HJPaymentModule/PayChannels/**/*.{h,m}"
-    },
-    {
-      "name": "AliPay",
-      "source_files": "HJPaymentModule/PayChannels/AliPay/*.{h,m}",
-      "resources": "HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle",
+      "source_files": "HJPaymentModule/PayChannels/**/*.{h,m}",
+      "libraries": [
+        "c++",
+        "sqlite3",
+        "z"
+      ],
+      "vendored_libraries": "HJPaymentModule/PayChannels/Unpay/**/*.a",
       "frameworks": [
         "CoreTelephony",
         "SystemConfiguration",
         "CoreMotion"
       ],
-      "vendored_frameworks": "HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework",
-      "libraries": [
-        "c++",
-        "sqlite3",
-        "z"
-      ],
-      "dependencies": {
-        "HJPaymentModule/PayChannels": [
-
-        ]
-      }
-    },
-    {
-      "name": "WXPay",
-      "source_files": "HJPaymentModule/PayChannels/WXPay/*.{h,m}",
       "dependencies": {
         "WechatOpenSDK": [
 
-        ],
-        "HJPaymentModule/PayChannels": [
-
         ]
-      }
-    },
-    {
-      "name": "Unpay",
-      "source_files": "HJPaymentModule/PayChannels/Unpay/**/*.{h,m}",
-      "vendored_libraries": "HJPaymentModule/PayChannels/Unpay/**/*.a",
-      "libraries": [
-        "c++",
-        "sqlite3",
-        "z"
-      ],
-      "dependencies": {
-        "HJPaymentModule/PayChannels": [
-
-        ]
-      }
+      },
+      "resources": "HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle",
+      "vendored_frameworks": "HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework"
     },
     {
       "name": "HJPaymentService",
@@ -79,15 +49,6 @@
       ],
       "dependencies": {
         "HJPaymentModule/PayChannels": [
-
-        ],
-        "HJPaymentModule/AliPay": [
-
-        ],
-        "HJPaymentModule/WXPay": [
-
-        ],
-        "HJPaymentModule/Unpay": [
 
         ]
       }

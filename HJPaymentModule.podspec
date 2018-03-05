@@ -31,43 +31,24 @@ s.source_files  = "HJPaymentModule/HJPaymentModule.h"
 
 
 #subspec
-s.subspec 'PayChannels' do |ss|
-ss.source_files ='HJPaymentModule/PayChannels/**/*.{h,m}'
-end
+    s.subspec 'PayChannels' do |ss|
+        ss.source_files ='HJPaymentModule/PayChannels/**/*.{h,m}'
+        ss.libraries = 'c++', 'sqlite3', 'z'
+        ss.vendored_libraries = 'HJPaymentModule/PayChannels/Unpay/**/*.a'
+        ss.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
+        ss.dependency 'WechatOpenSDK'
+        ss.resource = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle'
+        ss.vendored_frameworks = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework'
+    end
 
 
 
 
-s.subspec 'AliPay' do |ss|
-ss.source_files = 'HJPaymentModule/PayChannels/AliPay/*.{h,m}'
-ss.resource = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.bundle'
-ss.frameworks = 'CoreTelephony', 'SystemConfiguration', 'CoreMotion'
-ss.vendored_frameworks = 'HJPaymentModule/PayChannels/AliPay/**/AlipaySDK.framework'
-ss.libraries = 'c++', 'sqlite3', 'z'
-ss.dependency 'HJPaymentModule/PayChannels'
-end
-
-s.subspec 'WXPay' do |ss|
-ss.source_files = 'HJPaymentModule/PayChannels/WXPay/*.{h,m}'
-ss.dependency 'WechatOpenSDK'
-ss.dependency 'HJPaymentModule/PayChannels'
-end
-
-s.subspec 'Unpay' do |ss|
-ss.source_files = 'HJPaymentModule/PayChannels/Unpay/**/*.{h,m}'
-ss.vendored_libraries = 'HJPaymentModule/PayChannels/Unpay/**/*.a'
-ss.libraries = 'c++', 'sqlite3', 'z'
-ss.dependency 'HJPaymentModule/PayChannels'
-end
-
-s.subspec 'HJPaymentService' do |ss|
-ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m}'
-ss.frameworks = 'SystemConfiguration','CFNetwork'
-ss.dependency 'HJPaymentModule/PayChannels'
-ss.dependency  'HJPaymentModule/AliPay'
-ss.dependency 'HJPaymentModule/WXPay'
-ss.dependency 'HJPaymentModule/Unpay'
-end
+    s.subspec 'HJPaymentService' do |ss|
+        ss.source_files = 'HJPaymentModule/HJPaymentService/*.{h,m}'
+        ss.frameworks = 'SystemConfiguration','CFNetwork'
+        ss.dependency 'HJPaymentModule/PayChannels'
+    end
 
 
 end

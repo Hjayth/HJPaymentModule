@@ -1,22 +1,10 @@
 PODS:
   - HJPaymentModule (0.0.4):
-    - HJPaymentModule/AliPay (= 0.0.4)
     - HJPaymentModule/HJPaymentService (= 0.0.4)
     - HJPaymentModule/PayChannels (= 0.0.4)
-    - HJPaymentModule/Unpay (= 0.0.4)
-    - HJPaymentModule/WXPay (= 0.0.4)
-  - HJPaymentModule/AliPay (0.0.4):
-    - HJPaymentModule/PayChannels
   - HJPaymentModule/HJPaymentService (0.0.4):
-    - HJPaymentModule/AliPay
     - HJPaymentModule/PayChannels
-    - HJPaymentModule/Unpay
-    - HJPaymentModule/WXPay
-  - HJPaymentModule/PayChannels (0.0.4)
-  - HJPaymentModule/Unpay (0.0.4):
-    - HJPaymentModule/PayChannels
-  - HJPaymentModule/WXPay (0.0.4):
-    - HJPaymentModule/PayChannels
+  - HJPaymentModule/PayChannels (0.0.4):
     - WechatOpenSDK
   - WechatOpenSDK (1.8.1)
 
@@ -25,12 +13,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   HJPaymentModule:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  HJPaymentModule: 56e26189389b84e399f4e1a7b4a46a0be2ab2ea0
+  HJPaymentModule: 9cd0cdd19964116c63aad91fd9286db81177b05d
   WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
 
 PODFILE CHECKSUM: e30b985b3471d6b12bdc4eaba801018821adc69d
 
-COCOAPODS: 1.3.0.beta.2
+COCOAPODS: 1.2.1

@@ -33,10 +33,34 @@ typedef NS_ENUM(NSInteger , HJPaymentChannel){
 @interface HJPaymentService : NSObject
 
 
+/**
+ 支付订单
+
+ @param order order信息
+ @param paymentChannel 支付渠道
+ @param viewController 支付所在VC
+ @param secheme 对应的secheme
+ @param resultHandle 结果回调
+ */
 + (void)payWithOrder:(NSObject *)order paymentChannel:(HJPaymentChannel)paymentChannel viewController:(UIViewController *)viewController secheme:(NSString *)secheme resultHandle:(HJPayResultHandle)resultHandle;
 
+/**
+ 注册AppID
+
+ @param appId appID
+ @param paymentChannel 支付渠道
+ */
 +(void)registerAppID:(NSString *)appId paymentChannel:(HJPaymentChannel)
     paymentChannel;
+
+/**
+ handleOpenUrl
+
+ @param url url
+ 
+ @return handle结果
+ */
++ (BOOL)handleOpenUrl:(NSURL *)url;
 
 @property (nonatomic , strong) HJPaymentServiceProtocol * paymentService;
 
