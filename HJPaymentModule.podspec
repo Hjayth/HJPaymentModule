@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
 s.name         = "HJPaymentModule"
-s.version      = "0.0.4"
+s.version      = "0.0.5"
 s.summary      = "对Alipay、微信支付、银联支付三方支付进行聚合"
 
 s.description  = <<-DESC
